@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ajouter une tâche</h1>
+        <!-- Message d'alerte -->
+        <form class="todo-form" aria-label="Ajouter une tâche">
+            <div class="inputs">
+                <label for="tache">Tâche</label>
+                <input type="text" id="tache" name="tache">
+            </div>
+            <div class="inputs">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" placeholder="Sélectionnez une date">
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <hr>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tâche</th>
+                    <th>Date</th>
+                    <th>Barrer/Débarrer</th>
+
+                </tr>
+            </thead>
+            <tbody class="tache-list">
+                <!-- 
+                    <tr>
+                        <td>Ma tâche</td>
+                        <td>Ma date</td>
+                        <td><button class="delete">X</button></td>
+                    </tr>
+                -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
